@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#FACEBOOK
+
+cp /etc/hosts ~/hosts.new
+echo "127.0.0.2		localhost" > ~/hosts.my
+echo "8.8.8.8		facebook.com" >> ~/hosts.my
+cp -f ~/hosts.my /etc/hosts
